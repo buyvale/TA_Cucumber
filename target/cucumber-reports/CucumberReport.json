@@ -1,0 +1,176 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 23122052418,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinition.initializeTest()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Search for particular item",
+        "description": "",
+        "id": "search-for-items-on-etsy;search-for-particular-item",
+        "after": [
+          {
+            "result": {
+              "duration": 2642750068,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14721563552,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the main page",
+            "match": {
+              "location": "StepsDefinition.i_am_on_the_main_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4302615353,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I change local settings:",
+            "match": {
+              "location": "StepsDefinition.i_change_local_settings(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "language",
+                  "region",
+                  "currency"
+                ]
+              },
+              {
+                "cells": [
+                  "English (US)",
+                  "United Kingdom",
+                  "$ United States Dollar (USD)"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18844677576,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search for \"leather bag\" items",
+            "match": {
+              "arguments": [
+                {
+                  "val": "leather bag",
+                  "offset": 14
+                }
+              ],
+              "location": "StepsDefinition.i_search_for_items(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 337138562,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I see search results",
+            "match": {
+              "location": "StepsDefinition.i_see_search_results()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4984298302,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I select \"Ukraine\" ship destination",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ukraine",
+                  "offset": 10
+                }
+              ],
+              "location": "StepsDefinition.selectShippingDestination(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 277492635,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I get search results for \"Leather bag\" items",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Leather bag",
+                  "offset": 26
+                }
+              ],
+              "location": "StepsDefinition.i_get_search_results_for_items(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@datatable"
+          }
+        ]
+      }
+    ],
+    "name": "Search for items on Etsy",
+    "description": "  As a user\n  I want to search for different items\n  So that I will be able to buy necessary and can select shipping destination country",
+    "id": "search-for-items-on-etsy",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/EtsyComSample.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@datatable",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
